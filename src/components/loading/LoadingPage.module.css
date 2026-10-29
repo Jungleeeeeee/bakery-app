@@ -1,6 +1,22 @@
-.active_loading{
-background-color: #b40000;
+.container_loading{
+width: 100vw;
+height: 100vh;
+height: 100dvh;
+background-color:#eeeeb5;
+
 }
-.not_active_loading{
-background-color: #fff;
+.active_loading_picture{
+    animation: loadingScreenWaffles 2s ease normal forwards;
+  
 }
+
+
+@keyframes loadingScreenWaffles{
+ 0% {transform:  translate(130%, 10%) ;} 
+ 20% {transform: translate(50%, 30%);} 
+ 45% {transform: translate(130%, 50%);}
+ 65% {transform: translate(50%, 70%);}
+ 100% {transform: translate(130%, 80%);}
+ 
+}
+
