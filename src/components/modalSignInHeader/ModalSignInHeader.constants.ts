@@ -1,0 +1,1 @@
+export const container = document.querySelector<HTMLDivElement>('#portal-root')!

@@ -1,4 +1,4 @@
-
+import MainHeader from '@/components/mainHeader/MainHeader'
 import { Outlet } from "react-router-dom";
 
 
@@ -7,7 +7,7 @@ export function Layout(){
     return(
     <div>
         <header>
-            лэйаут шапка
+            <MainHeader/>
         </header>
           <Outlet />
         <footer>
