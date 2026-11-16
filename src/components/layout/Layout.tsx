@@ -1,8 +1,9 @@
 import MainHeader from '@/components/mainHeader/MainHeader'
-import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom"
 import MainSection from '@/components/mainSection/MainSection'
 import MainArticle from '@/components/mainArticle/MainArticle'
 import MainContent from '@/components/mainContent/MainContent'
+import MainFooter from '@/components/mainFooter/MainFooter'
 
 export function Layout(){
   
@@ -22,7 +23,7 @@ export function Layout(){
         </main>
           <Outlet />
         <footer>
-            лэйаут подвал
+            <MainFooter/>
         </footer>
     </div>
 )
