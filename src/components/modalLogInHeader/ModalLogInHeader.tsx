@@ -10,7 +10,7 @@ export default function ModalLogInHeader(){
 
     
     return(
-        <div >
+        <>
             {createPortal(
             <div className={styles.container} onClick={() =>{
      if(context?.setIsActiveToLogIn && context.isActiveToLogIn ){
@@ -30,6 +30,6 @@ export default function ModalLogInHeader(){
                 <button type="submit">зарегистрироваться</button>
             </form>
             </div>, container)}
-        </div>
+        </>
     )
 }

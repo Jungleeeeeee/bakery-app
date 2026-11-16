@@ -1,6 +1,6 @@
 import MainHeader from '@/components/mainHeader/MainHeader'
 import { Outlet } from "react-router-dom";
-
+import MainSection from '@/components/mainSection/MainSection'
 
 export function Layout(){
   
@@ -9,6 +9,9 @@ export function Layout(){
         <header>
             <MainHeader/>
         </header>
+        <section>
+            <MainSection/>
+        </section>
           <Outlet />
         <footer>
             лэйаут подвал

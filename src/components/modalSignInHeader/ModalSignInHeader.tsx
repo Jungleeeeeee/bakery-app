@@ -8,7 +8,7 @@ export default function ModalSignInHeader(){
      const context = useContext(ModalContext)
     
     return(
-        <div>
+        <>
             {createPortal(
             <div className={styles.container} onClick={() => {
             if(context?.setIsActiveToSignIn && context.isActiveToSignIn  ){
@@ -26,6 +26,6 @@ export default function ModalSignInHeader(){
                 <button type="submit">войти</button>
             </form>
             </div>, container)}
-        </div>
+        </>
     )
 }

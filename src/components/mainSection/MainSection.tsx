@@ -1,9 +1,33 @@
 
 
-export function MainSection(){
+export default function MainSection(){
     return(
         <div>
-            <h1>главная секция</h1>
+            <div>
+                <img src="#" alt="торт" />
+                <h2>Заголовок для карточки 1</h2>
+                <p>Карточка 1</p>
+            </div>
+            <div>
+                <img src="#" alt="торт" />
+                <h2>Заголовок для карточки 1</h2>
+                <p>Карточка 1</p>
+            </div>
+            <div>
+                <img src="#" alt="торт" />
+                <h2>Заголовок для карточки 1</h2>
+                <p>Карточка 1</p>
+            </div>
+            <div>
+                <img src="#" alt="торт" />
+                <h2>Заголовок для карточки 1</h2>
+                <p>Карточка 1</p>
+            </div>
+            <div>
+                <button>Листать</button>
+                <button>Листать</button>
+                <button>предложить рецепт</button>
+            </div>
         </div>
     )
 }
