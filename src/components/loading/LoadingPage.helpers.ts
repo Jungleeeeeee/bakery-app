@@ -5,21 +5,20 @@ import  type { PropsLoadingAnimation } from "@/components/loading/LoadingPage.ty
 
 
 export const useLoading: () => PropsLoadingAnimation = () => {
-   const [isLoading, setIsLoading] = useState(false)
+   const [isLoading, setIsLoading] = useState(true)
 
 
    useEffect(()=>{
-
-    setIsLoading(true)
-
-       const timerLoading = setTimeout(()=>{
+     
+         const timerLoading = setTimeout(()=>{
           
      setIsLoading(false)
       
         clearTimeout(timerLoading)
 
         }, 3000)
-            
+      
+     
         
    }, [])
 
