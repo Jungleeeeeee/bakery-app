@@ -1,0 +1,8 @@
+.parent{
+    background-color: #F5F5DC;
+}
+.parentHeader{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}

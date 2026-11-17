@@ -4,12 +4,13 @@ import MainSection from '@/components/mainSection/MainSection'
 import MainArticle from '@/components/mainArticle/MainArticle'
 import MainContent from '@/components/mainContent/MainContent'
 import MainFooter from '@/components/mainFooter/MainFooter'
+import styles from './Layout.module.css'
 
 export function Layout(){
   
     return(
-    <div>
-        <header>
+    <div className={styles.parent}>
+        <header className={styles.parentHeader}>
             <MainHeader/>
         </header>
         <section>
