@@ -10,7 +10,7 @@ export function Layout(){
   
     return(
     <div className={styles.parent}>
-        <header className={styles.parentHeader}>
+        <header>
             <MainHeader/>
         </header>
         <section>

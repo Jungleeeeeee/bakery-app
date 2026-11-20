@@ -1,0 +1,105 @@
+.parentHeader{
+padding-block: 3em;
+padding-inline: 1.5em;
+
+}
+.mainTitle{
+color: rgb(51, 50, 50);
+font-size: 3rem;
+margin-top: 0;
+margin-bottom: 1em;
+text-align: center;
+
+
+}
+.section{
+position: relative;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+
+}
+.sectionTitle{
+font-size: 2rem;
+color: rgb(51, 50, 50);
+
+}
+.parentReview{
+max-width: 480px;
+background-color:rgb(189, 188, 188);
+height: 130px;
+border-radius: 18px;
+padding-block: 1em;
+padding-inline: 0.5em;
+}
+.parentPictureUser{
+position: absolute;
+background-color: rgb(124, 0, 0);
+border-radius: 6px;
+width: 58px;
+height: 58px;
+}
+.pictureUserHead{
+position: absolute;
+transform: translate(20px, 6px);
+background-color: rgb(51, 50, 50);
+width: 19px;
+height: 19px;
+border-radius: 20px;
+}
+
+.pictureUserBody{
+position: absolute;
+transform: translate(20px, 28px);
+background-color: rgb(51, 50, 50);
+width: 19px;
+height: 22px;
+border-radius: 5px;
+}
+
+.divTitle{
+color: rgb(51, 50, 50);
+font-size: 2rem;
+}
+.divText{
+color: rgb(78, 50, 50);
+font-size: 1.5em;
+white-space: nowrap;      /* запрещает перенос строк */
+overflow: hidden;           
+text-overflow: ellipsis; /*троеточие обоюдное*/
+}
+.sectionButton{
+position: relative;
+transform: translate(0px, 46px);
+width: 160px;
+height:60px;
+border-radius: 10px;
+background-color: rgb(214, 214, 214);
+border: 3px solid #eeeeb5;
+color: rgb(51, 50, 50);
+font-size: 1rem;
+
+}
+.parentButtonsToModals{
+display: flex;
+justify-content: right;
+gap: 16px;
+}
+.buttonToEntry{
+height: 40px;
+width: 120px;
+border-radius: 10px;
+background-color: rgb(214, 214, 214);
+border: 3px solid #eeeeb5;
+color: rgb(51, 50, 50);
+font-size: 1rem;
+}
+.buttonToLogIn{
+height: 40px;
+width: 120px;
+border-radius: 10px;
+background-color: rgb(214, 214, 214);
+border: 3px solid #eeeeb5;
+color: rgb(51, 50, 50);
+font-size: 1rem;
+}

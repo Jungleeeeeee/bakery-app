@@ -18,11 +18,18 @@ body {
 
 /* Сбрасываем margin у всех текстовых блоков и списков, так как браузеры задают их по-разному */
 h1, h2, h3, h4, h5, h6, p, ul, ol, figure {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0.5em;
 }
 
 /* 3. Бонус: сброс внутренних отступов у списков, чтобы они не сдвигались вбок */
 ul, ol {
   padding-left: 0;
   list-style: none; /* Убирает маркеры по умолчанию, если нужно */
+}
+
+img{
+max-width: 100%; 
+height: auto;
+display: block;
 }

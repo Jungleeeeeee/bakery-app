@@ -3,7 +3,7 @@ import ModalSignInHeader from '@/components/modalSignInHeader/ModalSignInHeader'
 import ModalLogInHeader from '@/components/modalLogInHeader/ModalLogInHeader'
 import {   useState } from 'react'
 import {  ModalContext } from '@/components/mainHeader/MainHeader.constants'
-
+import styles from './MainHeader.module.css'
 
 
 
@@ -17,26 +17,36 @@ const [isActiveToLogIn, setIsActiveToLogIn] = useState(false)
 
 
     return(
-         <>
-             <h1>Сайт ЭЛИТНОЙ выпечки</h1>
-             <section>
-                <h2>Последние лучшие отызвы наших клиентов</h2>
-                <div>
-                    <div></div>
-                    <h3>Алина</h3>
-                    <p>Уже не первый раз заказываю с этого сайта, проверенный продавец</p>
+         <div className={styles.parentHeader}>
+             <h1 className={styles.mainTitle}>Сайт ЭЛИТНОЙ выпечки</h1>
+             <section className={styles.section}>
+                <h2 className={styles.sectionTitle}>Последние лучшие отызвы наших клиентов</h2>
+                <div className={styles.parentReview}>
+                    <h3 className={styles.divTitle}>Алина</h3>
+                    <p className={styles.divText}>Уже не первый раз заказываю с этого сайта, проверенный продавец</p>
+                  <div className={styles.parentPictureUser}>
+                        <div className={styles.pictureUserHead}></div>
+                        <div className={styles.pictureUserBody}></div>
+                    </div>
                 </div>
-                <div>
-                    <div></div>
-                    <h3>Егор</h3>
-                    <p>Выбераю эту пекарню потому что меня насильно заставляют</p>
+                
+                <div className={styles.parentReview}>
+                    <h3 className={styles.divTitle}>Егор</h3>
+                    <p className={styles.divText}>Выбераю эту пекарню потому что меня насильно заставляют</p>
+                     <div className={styles.parentPictureUser}>
+                        <div className={styles.pictureUserHead}></div>
+                        <div className={styles.pictureUserBody}></div>
+                    </div>
                 </div>
-                <div>
-                    <div></div>
-                    <h3>Султан</h3>
-                    <p>Только элиты и блотные ребята могут заказывать у вас</p>
+                <div className={styles.parentReview}>
+                    <h3 className={styles.divTitle}>Султан</h3>
+                    <p className={styles.divText}>Только элиты и блотные ребята могут заказывать у вас</p>
+                     <div className={styles.parentPictureUser}>
+                        <div className={styles.pictureUserHead}></div>
+                        <div className={styles.pictureUserBody}></div>
+                    </div>
                 </div>
-                <button>Посмтореть все отызывы</button>
+                <button className={styles.sectionButton}>Посмтореть все отызывы</button>
              </section>
         {!isActiveToSignIn && isActiveToLogIn &&  (
             <ModalContext value={{isActiveToLogIn, setIsActiveToLogIn}}>
@@ -54,10 +64,10 @@ const [isActiveToLogIn, setIsActiveToLogIn] = useState(false)
             </div>
         )}
         
-       <div>
-            <button  onClick={() => setIsActiveToSignIn(true)}>войти</button>
-            <button  onClick={() => setIsActiveToLogIn(true)} >регистрация</button>
+       <div className={styles.parentButtonsToModals}>
+            <button className={styles.buttonToEntry}  onClick={() => setIsActiveToSignIn(true)}>войти</button>
+            <button className={styles.buttonToLogIn} onClick={() => setIsActiveToLogIn(true)} >регистрация</button>
         </div>  
-        </>
+        </div>
     )
 }
