@@ -1,0 +1,95 @@
+.mainParent{
+background-color: #eeeeb5;
+width: 1300px;
+height: 800px;
+padding: 4em;
+position: fixed;
+transform: translate(340px, -2085px);
+border: 2px solid rgb(51, 50, 50);
+border-radius: 15px;
+}
+
+.parentTitle{
+text-align: center;
+font-size: 4rem;
+color: rgb(51, 50, 50);
+}
+.parentCancelIkons{
+position: relative;
+width: 60px;
+height: 55px;
+transform: translateY(-150px) translateX(1140px);
+
+}
+.parentCancelIkon1{
+position: absolute;
+background-color: rgb(51, 50, 50);
+width: 3px;
+height: 70px;
+transform: translateY(-5px) translateX(30px) rotateZ(50deg);
+
+
+}
+.parentCancelIkon2{
+position: absolute;
+background-color: rgb(51, 50, 50);
+width: 3px;
+height: 70px;
+transform: translateY(-5px) translateX(30px) rotateZ(130deg);
+}
+.parentForm{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 40px;
+}
+
+.formLabelEmail{
+
+font-size: 3rem;
+color: rgb(51, 50, 50);
+}
+
+.formInputEmail{
+
+width: 500px;
+height: 30px;
+border-radius: 10px;
+border: 2px solid rgb(51, 50, 50);
+}
+
+.formLabelPassword{
+
+font-size: 3rem;
+color: rgb(51, 50, 50);
+}
+
+.formInputPassword{
+width: 500px;
+height: 30px;
+border-radius: 10px;
+border: 2px solid rgb(51, 50, 50);
+}
+
+.formLabelRepeatPass{
+
+font-size: 3rem;
+color: rgb(51, 50, 50);
+}
+
+.formInputRepeatPass{
+width: 500px;
+height: 30px;
+border-radius: 10px;
+border: 2px solid rgb(51, 50, 50);
+}
+
+.formButtonLogIn{
+height: 40px;
+width: 200px;
+border-radius: 10px;
+background-color: rgb(214, 214, 214);
+border: 3px solid #eeeeb5;
+color: rgb(51, 50, 50);
+font-size: 1rem;
+}
