@@ -13,7 +13,7 @@ export default function ModalLogInHeader(){
     return(
         <>
             {createPortal(
-            <div className={styles.container} >
+            <div className={styles.mainParent} >
             <h2 className={styles.parentTitle}>регистрация</h2>
             <div className={styles.parentCancelIkons} onClick={() =>{
         if(context?.setIsActiveToLogIn && context.isActiveToLogIn ){

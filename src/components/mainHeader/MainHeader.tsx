@@ -1,6 +1,6 @@
 
-import ModalSignInHeader from '@/components/modalSignInHeader/ModalSignInHeader'
-import ModalLogInHeader from '@/components/modalLogInHeader/ModalLogInHeader'
+import ModalSignInHeader from '@/components/modalSignInHeader/ModalSignIn'
+import ModalLogInHeader from '@/components/modalLogInHeader/ModalLogIn'
 import {   useState } from 'react'
 import {  ModalContext } from '@/components/mainHeader/MainHeader.constants'
 import styles from './MainHeader.module.css'
